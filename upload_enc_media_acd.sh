@@ -29,10 +29,10 @@ if [ "$verbose" == true ]
 then
         echo "Verbose enabled!"
         python3.4 "$acd_cli" -v sync                                                                            # Syncs with ACD before uploading to make sure we have the most up to date info
-        python3.4 "$acd_cli" -v upload -x 8 "$local_location"* "$remote_location" 2> >(tee "$log_location" >&2) # Starts uploading with the locations set at the top of this script
+        python3.4 "$acd_cli" -v upload -x 8 --max-retries 10 "$local_location"* "$remote_location" 2> >(tee "$log_location" >&2) # Starts uploading with the locations set at the top of this script
 else
         python3.4 "$acd_cli" -v sync                                                                            # Syncs with ACD before uploading to make sure we have the most up to date info
-        python3.4 "$acd_cli" -v upload -x 8 "$local_location"* "$remote_location"                                       # Starts uploading with the locations set at the top of this script
+        python3.4 "$acd_cli" -v upload -x 8 --max-retries 10 "$local_location"* "$remote_location"                                       # Starts uploading with the locations set at the top of this script
 fi
 
 exit 0
