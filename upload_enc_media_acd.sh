@@ -11,7 +11,7 @@ verbose=true
 acd_cli=/usr/local/bin/acd_cli
 
 #Set local location of files to upload. Everything in this folder will be uploaded but no the folder itself
-local_location=/home/zachary/mounts/.local-sorted/
+local_location=/mnt/.local-sorted/
 
 #Set remote location on ACD
 remote_location=/
