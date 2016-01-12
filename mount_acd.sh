@@ -1,3 +1,3 @@
-/usr/local/bin/acdcli mount /mnt/.acd-sorted
-cat /home/zachary/encfspwd | ENCFS6_CONFIG='/home/zachary/encfs.xml' encfs -S /mnt/.acd-sorted /mnt/acd-sorted
-cat /home/zachary/encfspwd | ENCFS6_CONFIG='/home/zachary/encfs.xml' encfs -S /mnt/.local-sorted /mnt/local-sorted
+/usr/local/bin/acdcli mount /home/zachary/mounts/.acd-sorted
+cat /home/zachary/encfspwd | ENCFS6_CONFIG='/home/zachary/encfs.xml' encfs -S /home/zachary/mounts/.acd-sorted /home/zachary/mounts/acd-sorted
+cat /home/zachary/encfspwd | ENCFS6_CONFIG='/home/zachary/encfs.xml' encfs -S /home/zachary/mounts/.local-sorted /home/zachary/mounts/local-sorted
