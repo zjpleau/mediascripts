@@ -23,8 +23,6 @@ log_location=/home/zachary/scripts/upload_enc_media_acd.log
 ################################################################################################################################################
 #Sync to make sure we have the most up to date file structure
 
-acd_sync
-
 if [ "$verbose" == true ]
 then
         echo "Verbose enabled!"
